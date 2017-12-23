@@ -1,0 +1,6 @@
+sudo apt-get install git
+git clone https://github.com/serhangursoy/pandora-captive
+cd pandora-captive
+chmod +x install.sh
+sudo ./install.sh
+sudo reboot
