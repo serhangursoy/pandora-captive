@@ -5,8 +5,16 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+sudo apt-get update
+
 echo "Installing dependencies..."
-sudo apt-get install macchanger hostapd dnsmasq apache2 php5
+
+apt-get install macchanger
+apt-get install hostapd
+apt-get install dnsmasq
+apt-get install apache2
+apt-get install php5
+
 
 echo "Skipping NodeJS for now Egiş"
 
