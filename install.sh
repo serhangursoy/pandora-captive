@@ -6,11 +6,9 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 echo "Installing dependencies..."
-apt-get install macchanger hostapd dnsmasq apache2 php5 curl
+sudo apt-get install macchanger hostapd dnsmasq apache2 php5
 
-echo "NodeJS Exclusive Instal..."
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+echo "Skipping NodeJS for now Egiş"
 
 echo "Configuring components..."
 cp -f hostapd.conf /etc/hostapd/
