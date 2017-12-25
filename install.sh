@@ -5,8 +5,15 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+sudo apt-get update
+
 echo "Installing dependencies..."
-apt-get install macchanger hostapd dnsmasq apache2 php5 curl
+apt-get install macchanger
+apt-get install hostapd
+apt-get install dnsmasq
+apt-get install apache2
+apt-get install php5
+apt-get install curl
 
 echo "NodeJS Exclusive Instal..."
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
