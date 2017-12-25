@@ -8,16 +8,15 @@ fi
 sudo apt-get update
 
 echo "Installing dependencies..."
+
 apt-get install macchanger
 apt-get install hostapd
 apt-get install dnsmasq
 apt-get install apache2
 apt-get install php5
-apt-get install curl
 
-echo "NodeJS Exclusive Instal..."
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+
+echo "Skipping NodeJS for now Egiş"
 
 echo "Configuring components..."
 cp -f hostapd.conf /etc/hostapd/
