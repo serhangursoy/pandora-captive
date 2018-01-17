@@ -13,7 +13,7 @@ apt-get install macchanger
 apt-get install hostapd
 apt-get install dnsmasq
 apt-get install apache2
-apt-get install php5
+apt-get install php
 
 
 echo "Skipping NodeJS for now Egiş"
